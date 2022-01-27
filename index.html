@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="main2.css">
+        <title>電卓</title>
+  </head>
+  <body>
+    <h3>電卓</h3>
+      <form name="calculator">
+        <table class="cal_container">
+        <tr>
+          <th colspan="3"><div id="result">0</div></th>
+          <th><div id="cal_type"></div></th>
+        </tr>
+        <tr>
+          <td><input type="button" class="button" id="clear" value="C" onclick="cal_clear()"></td>
+          <td><input type="button" class="button" value="+/-" onclick="cal_run('+/-')"></td>
+          <td><input type="button" class="button" value="%" onclick="cal_run('%')"></td>
+          <td><input type="button" class="button" value="/" onclick="cal_run('/')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="button" value="7" onclick="cal_run(7)"></td>
+          <td><input type="button" class="button" value="8" onclick="cal_run(8)"></td>
+          <td><input type="button" class="button" value="9" onclick="cal_run(9)"></td>
+          <td><input type="button" class="button" value="*" onclick="cal_run('*')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="button" value="4" onclick="cal_run(4)"></td>
+          <td><input type="button" class="button" value="5" onclick="cal_run(5)"></td>
+          <td><input type="button" class="button" value="6" onclick="cal_run(6)"></td>
+          <td><input type="button" class="button" value="-" onclick="cal_run('-')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="button" value="1" onclick="cal_run(1)"></td>
+          <td><input type="button" class="button" value="2" onclick="cal_run(2)"></td>
+          <td><input type="button" class="button" value="3" onclick="cal_run(3)"></td>
+          <td><input type="button" class="button" value="+" onclick="cal_run('+')"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="button" class="button" id="zero" value="0" onclick="cal_run(0)"></td>
+          <td><input type="button" class="button" id="epriod" value="." onclick="cal_period()"></td>
+          <td><input type="button" class="button" id="equal" value="=" onclick="cal_equal()"></td>
+        </tr>
+        </table>
+      </form>
+    </div>
+    <script type="text/javascript" src="main2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </body>
+</html>
